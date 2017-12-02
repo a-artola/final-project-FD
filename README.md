@@ -7,7 +7,7 @@ Our goal is to get the correlation or causality between health outcomes and food
 
 
 # Datasets:
-We mainly need two datasets, which have the data on locations of grocery stores and the data on the public health data including hospitalizations of chronic diseases. Both the data can be extracted from Chicago Data Portal at the format of CSV or JSON.
+We mainly used two datasets, which have the data on locations of grocery stores and the data on the public health data including hospitalizations of chronic diseases. Both the data can be extracted from Chicago Data Portal at the format of CSV or JSON.
      
 A. Grocery Stores 2011 (491 samples)
 https://data.cityofchicago.org/Community-Economic-Development/Grocery-Stores-2011/4u6w-irs9
@@ -18,16 +18,39 @@ https://data.cityofchicago.org/Health-Human-Services/Public-Health-Statistics-Di
 C. Public Health Statistics- Selected public health indicators by Chicago community area (77 samples)
 https://data.cityofchicago.org/Health-Human-Services/Public-Health-Statistics-Selected-public-health-in/iqnk-2tcu
 
-Dataset A has the column of zip code and community name, so we can merge A with B or C easily. However, we want to know the density of grocery stores to check the accessibility of food. To calculate this, we need the data on housing units per zip code or community. They could be downloaded with the API of American Community Survey.
-
 D. American Community Survey 5-Year Data (2009-2015) housing units (DP04-0001E)
 https://api.census.gov/data/2015/acs/acs5/profile/variables.html
 
-# Possible extensions:
-Some kinds of diseases could be tested to assess the effect of food access and get the best regression model. In addition, we would map the data for food deserts and build the website if we could.
+E. Boundaries - Zip Codes (2016)
+https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-ZIP-Codes/gdcf-axmw
+
+F. Boundaries - Boundaries - Community Areas (current)
+https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-Community-Areas-current-/cauq-8yn6
+
+G. Census Data A (Zip Codes, Households, Mean Income, Race, Ethnicity)
+https://api.census.gov/data/2015/acs/acs5/profile?get=DP03_0051E,DP03_0063E,DP05_0028E,DP05_0033E,DP05_0066E&for=zip%20code%20tabulation%20area:*
+
+H. Census Data B (Zip Codes, Education)
+https://api.census.gov/data/2015/acs/acs5?get=B16010_001E,B16010_041E&for=zip%20code%20tabulation%20area:*
+
+Files for these data sets can also be found in our [repository](https://github.com/phobosgt3/final-project-FD).
+
+The majority of the analysis used Dataset A, B and C. Dataset A contains ZIP codes which allowed us to merge the file with Dataset B. ZIP codes were the only geographic data in Dataset B. Dataset C contains data at the Census Community Area level (defined as homogeneous neighborhood-like districts - 77 in Chicago) which is likely to produce more accurate results; however, it provides only diabetes related mortality from 2007. So, our analysis only included data from Dataset B.
+
+Dataset D provided data on housing units per zip code and zip code land area. This allowed us to determine the square footage of grocery stores per square mile in each zip code. Datasets E and F provided GIS data for mapping our results. Datasets G and H provided control variables for our regressions.
 
 
-# Our Tasks:
+# Results:
+
+All code for this analysis can be found in the following jupyter notebook:
+
+[food_desert_coding.ipynb](https://github.com/phobosgt3/final-project-FD/blob/master/food_desert_coding.ipynb)
+
+
+## Grocery Store Density and Hospitalization Rate ($):
+
+[[https://github.com/a-artola/final-project-FD/Figures/HospRate_GrocDens.png|alt=HospRate_GrocDens]]
+
 Preparation: Shinya supported by Adriana
 
 Data download (the number of grocery stores per square footage / zip code area)
