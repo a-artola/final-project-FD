@@ -48,22 +48,35 @@ All code for this analysis can be found in the following jupyter notebook:
 
 ## Results: 
 
-Our analysis focused on two variables: Grocery Store Density and Diabetes Hospitalization Rate. Grocery Store Density was calculated in two ways. We caclulated the percentage taking the aggregated square footage of grocery store per ZIP code over the land area of the ZIP code. We also calculated the number of grocery stores in each ZIP code. Diabeted Hospitalization Rate is the  number of hospital discharges attributed to residents of each ZIP code divided by the total population for the zip code. For this analysis, we used the adjusted rate which controls for the effects of differences in population age distributions.
+Our analysis focused on two variables: Grocery Store Density and Diabetes Hospitalization Rate. Grocery Store Density was calculated in two ways. We caclulated the density percentage taking the aggregated square footage of grocery stores per ZIP code over the land area of the ZIP code. We also aggregated the number of grocery stores in each ZIP code. Diabetes Hospitalization Rate is the  number of hospital discharges attributed to residents of each ZIP code divided by the total population for the zip code. For this analysis, we used the adjusted rate which controls for the effects of differences in population age distributions.
 
-### Grocery Store Density (%) and Hospitalization Rate (%):
+#### Grocery Store Density (%) and Hospitalization Rate (%):
 ![hosprate_grocdens](https://user-images.githubusercontent.com/32336614/33510911-f7ad43fc-d6d7-11e7-8dce-c243e481c365.png)
 
-### Grocery Store Density (N) and Hospitalization Rate (%):
+#### Grocery Store Density (N) and Hospitalization Rate (%):
 ![hosprate_grocdens_n](https://user-images.githubusercontent.com/32336614/33510914-f99ed612-d6d7-11e7-9df8-268287dec181.png)
 
-### Fast Food Restaurant (N) and Hospitalization Rate ($):
+#### Fast Food Restaurant (N) and Hospitalization Rate ($):
 ![hosprate_fastf_n](https://user-images.githubusercontent.com/32336614/33510916-fb6c74e0-d6d7-11e7-927c-79394b2ca57c.png)
 
+As we expected, the larger area is occupied by grocery stores, the less people suffer from diabetes. However, the health outcome does not seem to depend on how many grocery stores are in a district. More fast food restaurants do not appear to increase the hospitalization rate. This might be because the inner city in Chicago has many fast food restaurants and wealthy people who are likely to be healthy. See figures above.
+
+### Covariate Regressions:
+<img width="455" alt="screen shot 2017-12-01 at 10 00 12 pm" src="https://user-images.githubusercontent.com/32336614/33511602-2f62abba-d6e3-11e7-885d-9f3a5c725569.png">
+
+For our regressions, we included mean income, race, ethnicity and higher education attainment.
+
+The coefficients of groery density, fast food shop density and mean incomes are not significant because their t-values are not so large. On the other hand, the race compositon explains the healthcare outcome of diabetes better. Although our analysis cannot corroborate the bad effects of food deserts, the sample size is too small to conclude that it is not a relevant policy issue. Therefore, we expect further research on food desert's influence on health in the area with more samples and a more robust set of covariates.
+
 ### Distribution of Grocery Stores:
-<img src="https://user-images.githubusercontent.com/32336614/33511279-86eda50c-d6dd-11e7-8fcc-b6672259ae07.png" height="350" alt="Blue Dots">
+<img src="https://user-images.githubusercontent.com/32336614/33511279-86eda50c-d6dd-11e7-8fcc-b6672259ae07.png" height="450" alt="Blue Dots">
+
+To further analyze the presense of food deserts in Chicago, we ploted grocery store locations according to their relative size. We included size in the plot to give more weight to larger supermarkets compared to convenient stores and other smaller stores that might not actually sell a variety of healthy foods. From these map we can see geographic trends in the distribution of grocery stores.
 
 ### Grocery Store Density and Hospitalization Rate ($) by ZIP code:
 <img src="https://user-images.githubusercontent.com/32336614/33511445-92668806-d6e0-11e7-8131-27935fadfacc.png" height="290" alt="groc_cens"><img src="https://user-images.githubusercontent.com/32336614/33510925-4a695c3e-d6d8-11e7-82cc-a03acd115d52.png" height="290" alt="diabetes_cens"><img src="https://user-images.githubusercontent.com/32336614/33510927-4aa981c4-d6d8-11e7-994f-36307e780054.png" height="290" alt="blue_red">
+
+
 
 ### Grocery Store Density and Hospitalization Rate ($) Quartile Comparison:
 <img src="https://user-images.githubusercontent.com/32336614/33511276-868bb414-d6dd-11e7-95e8-56cdb01723b0.png" height="350" alt="groc_hosp_quar">
