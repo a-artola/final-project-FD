@@ -76,11 +76,11 @@ The U.S. Department of Agriculture describes that a food desert is an area with 
 
 We can obtain the data of "poverty rates" from Census.
 
-<height="450" alt="food_des2" src="https://user-images.githubusercontent.com/32336614/33512042-4723d0f8-d6ed-11e7-90b5-0c526817f398.png">
+<height="450" alt="food_des2" img src="https://user-images.githubusercontent.com/32336614/33512042-4723d0f8-d6ed-11e7-90b5-0c526817f398.png">
 
 To visualize the accessibility to closest groceries, we can also depict a map with gradation.
 
-<height="450" alt="food_des2" src="https://user-images.githubusercontent.com/32336614/33512043-48cf79de-d6ed-11e7-8365-eb9fa7ac92f2.png">
+<height="450" alt="food_des2" img src="https://user-images.githubusercontent.com/32336614/33512043-48cf79de-d6ed-11e7-8365-eb9fa7ac92f2.png">
 
 #### Grocery Store Density (%) and Hospitalization Rate (%) by ZIP code:
 <img src="https://user-images.githubusercontent.com/32336614/33511445-92668806-d6e0-11e7-8131-27935fadfacc.png" height="290" alt="groc_cens"><img src="https://user-images.githubusercontent.com/32336614/33510925-4a695c3e-d6d8-11e7-82cc-a03acd115d52.png" height="290" alt="diabetes_cens"><img src="https://user-images.githubusercontent.com/32336614/33510927-4aa981c4-d6d8-11e7-994f-36307e780054.png" height="290" alt="blue_red">
