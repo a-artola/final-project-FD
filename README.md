@@ -1,12 +1,12 @@
-# final-project-Food Desert
+# Final Project: Food Desserts
 
-# Question:
+## Question:
 “Food Desert” is a long-lasting issue in metropolitans and has attracted much attention because the poor local food environment might deteriorate health status of local people. Both the growth of large supermarkets in outskirts and the economic segregation led to limited access to healthy food in inner cities. And a diet with less nutrition provided by not large supermarkets but fast food restaurants could make health outcomes poor.
 
 Our goal is to get the correlation or causality between health outcomes and food access from the data in Chicago. The U.S. Department of Agriculture defines a food desert as an area with a poverty rate of at least 20 percent and where at least a third of the population lives more than a mile from a supermarket or large grocery store. There has been some amount of research on food deserts (Renee E. Walker et al, 2010 etc.), but we don’t know the exact number of people living in food deserts in Chicago. The new law (HB3157) approved last month requires Illinois to track food deserts, and the City of Chicago is pursuing solutions such as the collaboration with Whole Foods to solve the problem. Thus, it is a good timing to reconsider the importance of the policy.
 
 
-# Datasets:
+## Datasets:
 We mainly used two datasets, which have the data on locations of grocery stores and the data on the public health data including hospitalizations of chronic diseases. Both the data can be extracted from Chicago Data Portal at the format of CSV or JSON.
      
 A. Grocery Stores 2011 (491 samples)
@@ -40,13 +40,9 @@ The majority of the analysis used Dataset A, B and C. Dataset A contains ZIP cod
 Dataset D provided data on housing units per zip code and zip code land area. This allowed us to determine the square footage of grocery stores per square mile in each zip code. Datasets E and F provided GIS data for mapping our results. Datasets G and H provided control variables for our regressions.
 
 
-# Investigation:
+## Results:
 
-All code for this analysis can be found in the following jupyter notebook:
-
-[food_desert_coding.ipynb](https://github.com/phobosgt3/final-project-FD/blob/master/food_desert_coding.ipynb)
-
-## Results: 
+All code for this analysis can be found in the following jupyter notebook: [food_desert_coding.ipynb](https://github.com/phobosgt3/final-project-FD/blob/master/food_desert_coding.ipynb)
 
 Our analysis focused on two variables: Grocery Store Density and Diabetes Hospitalization Rate. Grocery Store Density was calculated in two ways. We caclulated the density percentage taking the aggregated square footage of grocery stores per ZIP code over the land area of the ZIP code. We also aggregated the number of grocery stores in each ZIP code. Diabetes Hospitalization Rate is the  number of hospital discharges attributed to residents of each ZIP code divided by the total population for the zip code. For this analysis, we used the adjusted rate which controls for the effects of differences in population age distributions.
 
@@ -66,23 +62,24 @@ As we expected, the larger area is occupied by grocery stores, the less people s
 
 For our regressions, we included mean income, race, ethnicity and higher education attainment.
 
-The coefficients of groery density, fast food shop density and mean incomes are not significant because their t-values are not so large. On the other hand, the race compositon explains the healthcare outcome of diabetes better. Although our analysis cannot corroborate the bad effects of food deserts, the sample size is too small to conclude that it is not a relevant policy issue. Therefore, we expect further research on food desert's influence on health in the area with more samples and a more robust set of covariates.
+The coefficients of groery store density, fast food shop density and mean incomes are not significant because their t-values are not so large. On the other hand, the race compositon explains the healthcare outcome of diabetes better. Although our analysis cannot corroborate the bad effects of food deserts, the sample size is too small to conclude that it is not a relevant policy issue. Therefore, we expect further research on food desert's influence on health in the area with more samples and a more robust set of covariates.
 
 ### Distribution of Grocery Stores:
 <img src="https://user-images.githubusercontent.com/32336614/33511279-86eda50c-d6dd-11e7-8fcc-b6672259ae07.png" height="450" alt="Blue Dots">
 
 To further analyze the presense of food deserts in Chicago, we ploted grocery store locations according to their relative size. We included size in the plot to give more weight to larger supermarkets compared to convenient stores and other smaller stores that might not actually sell a variety of healthy foods. From these map we can see geographic trends in the distribution of grocery stores.
 
-### Grocery Store Density and Hospitalization Rate ($) by ZIP code:
+### Grocery Store Density (%) and Hospitalization Rate (%) by ZIP code:
 <img src="https://user-images.githubusercontent.com/32336614/33511445-92668806-d6e0-11e7-8131-27935fadfacc.png" height="290" alt="groc_cens"><img src="https://user-images.githubusercontent.com/32336614/33510925-4a695c3e-d6d8-11e7-82cc-a03acd115d52.png" height="290" alt="diabetes_cens"><img src="https://user-images.githubusercontent.com/32336614/33510927-4aa981c4-d6d8-11e7-994f-36307e780054.png" height="290" alt="blue_red">
 
-
-
-### Grocery Store Density and Hospitalization Rate ($) Quartile Comparison:
-<img src="https://user-images.githubusercontent.com/32336614/33511276-868bb414-d6dd-11e7-95e8-56cdb01723b0.png" height="350" alt="groc_hosp_quar">
+After plotting grocery store density and hospitalization rates by ZIP code, we can see where any overlap exists (or doesn't). "Grocery Store Square Feet per Square and Diabetes Hospitalization Rate" shows patches of dark purple which represents areas in which there is both a low grocery store density and a high rate of diabetes. This occurs on the south side and it is particulary concentrated on the west side. The North West corner of the city has very low grocery store density but also very low rates of diabetes. In the North East corner, we see the opposite: higher rates of diabetes and very high grocery store density.
 
 # Limitations:
 
+Our analysis would have benefited from diabetes statistics at either a Cencus Community Area level or a Census Tract Level. This would have allowed us analyze health levels closer to the locations of the food deserts. Also, our analysis was not as robust as possible. Other factors that relate to socioeconomic status and the geography of the city would have benefited the analysis.
+
 # Conclusion:
+
+
 
 
