@@ -61,6 +61,7 @@ Our analysis focused on two variables: Grocery Store Density and Diabetes Hospit
 
 ### Distribution of Grocery Stores:
 ![blue_dots](https://user-images.githubusercontent.com/32336614/33511279-86eda50c-d6dd-11e7-8fcc-b6672259ae07.png)
+<img src="https://user-images.githubusercontent.com/32336614/33511279-86eda50c-d6dd-11e7-8fcc-b6672259ae07.png" height="40" alt="Computer Hope">
 
 ### Grocery Store Density by ZIP code:
 ![groc_cens](https://user-images.githubusercontent.com/32336614/33510928-4ac70532-d6d8-11e7-9bbf-131efd5cbd78.png)
