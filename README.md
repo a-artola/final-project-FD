@@ -49,8 +49,10 @@ All code for this analysis can be found in the following jupyter notebook:
 
 ## Grocery Store Density and Hospitalization Rate ($):
 
-![Alt text](a-artola/final-project-FD/Figures/HospRate_GrocDens.png)
 
+![hosprate_grocdens](https://user-images.githubusercontent.com/32336614/33510911-f7ad43fc-d6d7-11e7-8dce-c243e481c365.png)
+![hosprate_grocdens_n](https://user-images.githubusercontent.com/32336614/33510914-f99ed612-d6d7-11e7-9df8-268287dec181.png)
+![hosprate_fastf_n](https://user-images.githubusercontent.com/32336614/33510916-fb6c74e0-d6d7-11e7-927c-79394b2ca57c.png)
 Preparation: Shinya supported by Adriana
 
 Data download (the number of grocery stores per square footage / zip code area)
