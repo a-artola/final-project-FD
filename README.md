@@ -69,7 +69,7 @@ Our analysis focused on two variables: Grocery Store Density and Diabetes Hospit
 ![diabetes_cens](https://user-images.githubusercontent.com/32336614/33510925-4a695c3e-d6d8-11e7-82cc-a03acd115d52.png)
 
 ### Grocery Store Density and Hospitalization Rate ($) Quartile Comparison:
-![groc_hosp_quar](https://user-images.githubusercontent.com/32336614/33510929-4ae30746-d6d8-11e7-877d-fbc54e50b21c.png)
+![groc_hosp_quar](https://user-images.githubusercontent.com/32336614/33511276-868bb414-d6dd-11e7-95e8-56cdb01723b0.png)
 
 ### Grocery Store Density and Hospitalization Rate ($) Overlap:
 ![blue_red](https://user-images.githubusercontent.com/32336614/33510927-4aa981c4-d6d8-11e7-994f-36307e780054.png)
