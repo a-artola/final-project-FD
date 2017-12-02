@@ -63,7 +63,7 @@ Our analysis focused on two variables: Grocery Store Density and Diabetes Hospit
 <img src="https://user-images.githubusercontent.com/32336614/33511279-86eda50c-d6dd-11e7-8fcc-b6672259ae07.png" height="300" alt="Blue Dots">
 
 ### Grocery Store Density and Hospitalization Rate ($) by ZIP code:
-<img src="https://user-images.githubusercontent.com/32336614/33511445-92668806-d6e0-11e7-8131-27935fadfacc.png" height="300" alt="groc_cens"><img src="https://user-images.githubusercontent.com/32336614/33510925-4a695c3e-d6d8-11e7-82cc-a03acd115d52.png" height="300" alt="diabetes_cens"><img src="https://user-images.githubusercontent.com/32336614/33510927-4aa981c4-d6d8-11e7-994f-36307e780054.png" height="300" alt="blue_red">
+<img src="https://user-images.githubusercontent.com/32336614/33511445-92668806-d6e0-11e7-8131-27935fadfacc.png" height="250" alt="groc_cens"><img src="https://user-images.githubusercontent.com/32336614/33510925-4a695c3e-d6d8-11e7-82cc-a03acd115d52.png" height="250" alt="diabetes_cens"><img src="https://user-images.githubusercontent.com/32336614/33510927-4aa981c4-d6d8-11e7-994f-36307e780054.png" height="250" alt="blue_red">
 
 ### Grocery Store Density and Hospitalization Rate ($) Quartile Comparison:
 <img src="https://user-images.githubusercontent.com/32336614/33511276-868bb414-d6dd-11e7-95e8-56cdb01723b0.png" height="300" alt="groc_hosp_quar">
