@@ -72,15 +72,13 @@ To further analyze the presence of food deserts in Chicago, we plotted grocery s
 ### Food Deserts:
 Now, remember the definition of "food desert".
 
-The U.S. Department of Agriculture describes that a food desert is an area with a poverty rate of at least 20 percent and where at least a third of the population lives more than a mile from a supermarket or large grocery store.However, if we follow the definition, there are almost no places which satisfy the conditions in Chicago. Therefore, suppose that we lower the threshold of distance from a grocery to 1km instead of 1mile(=1.6km) while we keep the threshold of poverty rates in the area.
+The U.S. Department of Agriculture describes that a food desert is an area with a poverty rate of at least 20 percent and where at least a third of the population lives more than a mile from a supermarket or large grocery store.However, if we follow the definition, there are almost no places which satisfy the conditions in Chicago. Therefore, suppose that we lower the threshold of distance from a grocery to 1km instead of 1mile(=1.6km) while we keep the threshold of poverty rates in the area. We can obtain the data of "poverty rates" from Census.
 
-We can obtain the data of "poverty rates" from Census.
-
-<height="450" alt="food_des2" img src="https://user-images.githubusercontent.com/32336614/33512042-4723d0f8-d6ed-11e7-90b5-0c526817f398.png">
+<img src="https://user-images.githubusercontent.com/32336614/33512042-4723d0f8-d6ed-11e7-90b5-0c526817f398.png" height="450" alt="food_des1">
 
 To visualize the accessibility to closest groceries, we can also depict a map with gradation.
 
-<height="450" alt="food_des2" img src="https://user-images.githubusercontent.com/32336614/33512043-48cf79de-d6ed-11e7-8365-eb9fa7ac92f2.png">
+<img src="https://user-images.githubusercontent.com/32336614/33512043-48cf79de-d6ed-11e7-8365-eb9fa7ac92f2.png" height="450" alt="food_des2">
 
 #### Grocery Store Density (%) and Hospitalization Rate (%) by ZIP code:
 <img src="https://user-images.githubusercontent.com/32336614/33511445-92668806-d6e0-11e7-8131-27935fadfacc.png" height="290" alt="groc_cens"><img src="https://user-images.githubusercontent.com/32336614/33510925-4a695c3e-d6d8-11e7-82cc-a03acd115d52.png" height="290" alt="diabetes_cens"><img src="https://user-images.githubusercontent.com/32336614/33510927-4aa981c4-d6d8-11e7-994f-36307e780054.png" height="290" alt="blue_red">
