@@ -49,7 +49,7 @@ All code for this analysis can be found in the following jupyter notebook:
 
 ## Grocery Store Density and Hospitalization Rate ($):
 
-![Alt text](a-artola/final-project-FD/Figures/HospRate_GrocDens.png?raw=true "Optional Title")
+![Alt text](a-artola/final-project-FD/Figures/HospRate_GrocDens.png)
 
 Preparation: Shinya supported by Adriana
 
