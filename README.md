@@ -3,7 +3,7 @@
 ## Question:
 “Food Desert” is a long-lasting issue in metropolitans and has attracted much attention because the poor local food environment might deteriorate health status of local people. Both the growth of large supermarkets in outskirts and the economic segregation led to limited access to healthy food in inner cities. And a diet with less nutrition provided by not large supermarkets but fast food restaurants could make health outcomes poor.
 
-Our goal is to get the correlation or causality between health outcomes and food access from the data in Chicago. The U.S. Department of Agriculture defines a food desert as an area with a poverty rate of at least 20 percent and where at least a third of the population lives more than a mile from a supermarket or large grocery store. There has been some amount of research on food deserts (Renee E. Walker et al, 2010 etc.), but we don’t know the exact number of people living in food deserts in Chicago. The new law (HB3157) approved last month requires Illinois to track food deserts, and the City of Chicago is pursuing solutions such as the collaboration with Whole Foods to solve the problem. Thus, it is a good timing to reconsider the importance of the policy.
+Our goal is to get the correlation or causality between health outcomes and food access from the data in Chicago. The U.S. Department of Agriculture defines a food desert as an area with a poverty rate of at least 20 percent and where at least a third of the population lives more than a mile from a supermarket or large grocery store. There has been some amount of research on food deserts (Renee E. Walker et al, 2010 etc.), but we don’t know the exact number of people living in food deserts in Chicago. The new law (HB3157) approved in September requires Illinois to track food deserts, and the City of Chicago is pursuing solutions such as the collaboration with Whole Foods to solve the problem. Thus, it is a good timing to reconsider the importance of the policy.
 
 
 ## Datasets:
@@ -33,7 +33,7 @@ https://api.census.gov/data/2015/acs/acs5/profile?get=DP03_0051E,DP03_0063E,DP05
 H. Census Data B (Zip Codes, Education)
 https://api.census.gov/data/2015/acs/acs5?get=B16010_001E,B16010_041E&for=zip%20code%20tabulation%20area:*
 
-Files for these data sets can also be found in our [repository](https://github.com/phobosgt3/final-project-FD).
+Files for these data sets can also be found in our [repository](https://github.com/a-artola/final-project-FD).
 
 The majority of the analysis used Dataset A, B and C. Dataset A contains ZIP codes which allowed us to merge the file with Dataset B. ZIP codes were the only geographic data in Dataset B. Dataset C contains data at the Census Community Area level (defined as homogeneous neighborhood-like districts - 77 in Chicago) which is likely to produce more accurate results; however, it provides only diabetes related mortality from 2007. So, our analysis only included data from Dataset B.
 
@@ -42,7 +42,7 @@ Dataset D provided data on housing units per zip code and zip code land area. Th
 
 ## Results:
 
-All code for this analysis can be found in the following jupyter notebook: [food_desert_coding.ipynb](https://github.com/phobosgt3/final-project-FD/blob/master/food_desert_coding.ipynb)
+All code for this analysis can be found in the following jupyter notebook: [food_desert_coding.ipynb](https://github.com/a-artola/final-project-FD/blob/master/food_desert_coding.ipynb)
 
 Our analysis focused on two variables: Grocery Store Density and Diabetes Hospitalization Rate. Grocery Store Density was calculated in two ways. We calculated the density percentage taking the aggregated square footage of grocery stores per ZIP code over the land area of the ZIP code. We also aggregated the number of grocery stores in each ZIP code. Diabetes Hospitalization Rate is the  number of hospital discharges attributed to residents of each ZIP code divided by the total population for the zip code. For this analysis, we used the adjusted rate which controls for the effects of differences in population age distributions.
 
