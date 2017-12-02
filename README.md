@@ -40,32 +40,42 @@ The majority of the analysis used Dataset A, B and C. Dataset A contains ZIP cod
 Dataset D provided data on housing units per zip code and zip code land area. This allowed us to determine the square footage of grocery stores per square mile in each zip code. Datasets E and F provided GIS data for mapping our results. Datasets G and H provided control variables for our regressions.
 
 
-# Results:
+# Investigation:
 
 All code for this analysis can be found in the following jupyter notebook:
 
 [food_desert_coding.ipynb](https://github.com/phobosgt3/final-project-FD/blob/master/food_desert_coding.ipynb)
 
+## Results: 
 
-## Grocery Store Density and Hospitalization Rate ($):
+Our analysis focused on two variables: Grocery Store Density and Diabetes Hospitalization Rate. Grocery Store Density was calculated in two ways. We caclulated the percentage taking the aggregated square footage of grocery store per ZIP code over the land area of the ZIP code. We also calculated the number of grocery stores in each ZIP code. Diabeted Hospitalization Rate is the  number of hospital discharges attributed to residents of each ZIP code divided by the total population for the zip code. For this analysis, we used the adjusted rate which controls for the effects of differences in population age distributions.
 
-
+### Grocery Store Density (%) and Hospitalization Rate (%):
 ![hosprate_grocdens](https://user-images.githubusercontent.com/32336614/33510911-f7ad43fc-d6d7-11e7-8dce-c243e481c365.png)
+
+### Grocery Store Density (N) and Hospitalization Rate (%):
 ![hosprate_grocdens_n](https://user-images.githubusercontent.com/32336614/33510914-f99ed612-d6d7-11e7-9df8-268287dec181.png)
+
+### Fast Food Restaurant (N) and Hospitalization Rate ($):
 ![hosprate_fastf_n](https://user-images.githubusercontent.com/32336614/33510916-fb6c74e0-d6d7-11e7-927c-79394b2ca57c.png)
-Preparation: Shinya supported by Adriana
 
-Data download (the number of grocery stores per square footage / zip code area)
+### Distribution of Grocery Stores:
+![blue_dots](https://user-images.githubusercontent.com/32336614/33510926-4a8b2aee-d6d8-11e7-9883-c4cdef71f954.png)
 
-Merge the dataset (Write the code with pandas)
+### Grocery Store Density by ZIP code:
+![groc_cens](https://user-images.githubusercontent.com/32336614/33510928-4ac70532-d6d8-11e7-9bbf-131efd5cbd78.png)
 
-Regression model / Plotting
+### Hospitalization Rate ($) by ZIP code:
+![diabetes_cens](https://user-images.githubusercontent.com/32336614/33510925-4a695c3e-d6d8-11e7-82cc-a03acd115d52.png)
+
+### Grocery Store Density and Hospitalization Rate ($) Quartile Comparison:
+![groc_hosp_quar](https://user-images.githubusercontent.com/32336614/33510929-4ae30746-d6d8-11e7-877d-fbc54e50b21c.png)
+
+### Grocery Store Density and Hospitalization Rate ($) Overlap:
+![blue_red](https://user-images.githubusercontent.com/32336614/33510927-4aa981c4-d6d8-11e7-994f-36307e780054.png)
+
+# Limitations:
+
+# Conclusion:
 
 
-Finalizing: Adriana supported by Shinya
-
-Mapping
-
-Webpage
-
-Read me
